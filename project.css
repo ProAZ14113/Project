@@ -32,7 +32,7 @@ body,
 }
 
 .Cards{
-    width: 10rem;    
+    width: 10px;
 }
 
 
@@ -44,4 +44,12 @@ body,
     text-align: center;
     align-items: center;
     color: rgba(0, 0, 0, 0.842);
+    background-color: black;
+}
+
+.BText{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(252, 252, 252);
 }
