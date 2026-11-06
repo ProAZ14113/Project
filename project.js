@@ -87,7 +87,7 @@ const BrawlStars = [
     health: 6600,
     damage: 2160,
     super: 0,
-    rank: S,
+    rank: "S",
     winR: 66.3,
     price: 35.99,
     quantity: 1},
@@ -96,7 +96,7 @@ const BrawlStars = [
     health: 5200,
     damage: 1320,
     super: 3040,
-    rank: B,
+    rank: "B",
     winR: 45.9,
     price: 20.99,
     quantity: 2 },
@@ -105,7 +105,7 @@ const BrawlStars = [
     health: 6600,
     damage: 2360,
     super: 2000,
-    rank: A,
+    rank: "A",
     winR: 39,
     price: 25.99,
     quantity: 7},
@@ -114,7 +114,7 @@ const BrawlStars = [
     health: 5400,
     damage: 1600,
     super: 4000,
-    rank: C,
+    rank: "C",
     winR: 49.6,
     price: 16.99,
     quantity: 14},
@@ -123,7 +123,7 @@ const BrawlStars = [
     health: 10000,
     damage: 2800,
     super: 1800,
-    rank: B,
+    rank: "B",
     winR: 35.7,
     price: 20.99,
     quantity: 9},
@@ -132,7 +132,7 @@ const BrawlStars = [
     health: 8200,
     damage: 1000,
     super: 2600,
-    rank: B,
+    rank: "B",
     winR: 55.2,
     price: 20.99,
     quantity: 8},
@@ -141,7 +141,7 @@ const BrawlStars = [
     health: 6200,
     damage: 1280,
     super: 1600,
-    rank: B,
+    rank: "B",
     winR: 58.9,
     price: 20.99,
     quantity: 5 },
@@ -150,7 +150,7 @@ const BrawlStars = [
     health: 10000,
     damage: 4200,
     super: 1.5,
-    rank: B,
+    rank: "B",
     winR: 40.1,
     price: 20.99,
     quantity: 1},
@@ -159,7 +159,7 @@ const BrawlStars = [
     health: 10400,
     damage: 2480,
     super: 0,
-    rank: C,
+    rank: "C",
     winR: 48.6,
     price: 16.99,
     quantity: 2},
@@ -168,7 +168,7 @@ const BrawlStars = [
     health: 7200,
     damage: 3840,
     super: 0,
-    rank: B,
+    rank: "B",
     winR: 38.5,
     price: 26.99,
     quantity: 3 },
@@ -177,7 +177,7 @@ const BrawlStars = [
     health: 7200,
     damage: 2160,
     super: 0,
-    rank: A,
+    rank: "A",
     winR: 27.8,
     price: 25.99,
     quantity: 12}
@@ -211,5 +211,6 @@ function cartprice(BrawlerName, Quantity){
 console.log(cart(Edger, 2))
 
 
-
-
+.BrawlStars.forEach(Name => {
+    
+});
