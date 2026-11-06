@@ -1,0 +1,241 @@
+
+
+
+
+
+const BrawlStars = [
+{   name: "Shelly",
+    health: 7800,
+    damage: 3000, 
+    super: 5760,
+    rank: "A",
+    winR: 36.3,
+    price: "free",
+    quantity: 2 
+    },
+
+{   name: "Mandy",
+    health: 6000,
+    damage: 2600,
+    super: 5000,
+    rank: "A",
+    winR: 47.3,
+    price: 925,
+    price: 25.99,
+    quantity: 8},
+
+{   name: "Nita",
+    health: 8400,
+    damage: 1920,
+    super: 800,
+    rank: "D", 
+    winR: 47,
+    price: 12.99,
+    quantity: 3
+    },
+
+{   name: "Byron", 
+    health: 5200,
+    damage: 760,
+    super: 3000,
+    rank: "A",
+    winR: 52,
+    price: 25.99,
+    quantity: 1},
+
+{   name: "Frank",
+    health: 13600,
+    damage: 2320,
+    super: 2480,
+    rank: "D",
+    winR: 35.6,
+    price: 12.99,
+    quantity: 0 },
+
+{   name: "Janet",
+    health: 6800,
+    damage: 2000,
+    super: 1600,
+    rank: "B", 
+    winR: 58.2,
+    price: 20.99,
+    quantity: 4 },
+
+{   name: "Ollie", 
+    health: 10800,
+    damage: 2000, 
+    super: 1600,
+    rank: "C",
+    winR: 55.9,
+    price: 17.87,
+    quantity: 26 },
+
+{   name: "Darrly", 
+    health: 11000,
+    damage: 4800,
+    super: 800,
+    rank: "A",
+    winR: 38.5,
+    price: 25.99,
+    quantity: 2 },
+
+{   name: "Angelo",
+    health: 6200,
+    damage: 4000,
+    super: 1000,
+    rank: "B",
+    winR: 60.8,
+    price: 20.99,
+    quantity: 2 },
+
+{   name: "Gus",
+    health: 6600,
+    damage: 2160,
+    super: 0,
+    rank: "S",
+    winR: 66.3,
+    price: 35.99,
+    quantity: 1},
+
+{   name: "Berry", 
+    health: 5200,
+    damage: 1320,
+    super: 3040,
+    rank: "B",
+    winR: 45.9,
+    price: 20.99,
+    quantity: 2 },
+
+{   name: "Surge",
+    health: 6600,
+    damage: 2360,
+    super: 2000,
+    rank: "A",
+    winR: 39,
+    price: 25.99,
+    quantity: 7},
+
+{   name: "Barley",  
+    health: 5400,
+    damage: 1600,
+    super: 4000,
+    rank: "C",
+    winR: 49.6,
+    price: 16.99,
+    quantity: 14},
+
+{   name: "Bibi",
+    health: 10000,
+    damage: 2800,
+    super: 1800,
+    rank: "B",
+    winR: 35.7,
+    price: 20.99,
+    quantity: 9},
+
+{   name: "Gigi", 
+    health: 8200,
+    damage: 1000,
+    super: 2600,
+    rank: "B",
+    winR: 55.2,
+    price: 20.99,
+    quantity: 8},
+
+{   name: "Eve",
+    health: 6200,
+    damage: 1280,
+    super: 1600,
+    rank: "B",
+    winR: 58.9,
+    price: 20.99,
+    quantity: 5 },
+
+{   name: "Buzz",
+    health: 10000,
+    damage: 4200,
+    super: 1.5,
+    rank: "B",
+    winR: 40.1,
+    price: 20.99,
+    quantity: 1},
+
+{   name: "Jacky",
+    health: 10400,
+    damage: 2480,
+    super: 0,
+    rank: "C",
+    winR: 48.6,
+    price: 16.99,
+    quantity: 2},
+
+{   name: "Leon", 
+    health: 7200,
+    damage: 3840,
+    super: 0,
+    rank: "B",
+    winR: 38.5,
+    price: 26.99,
+    quantity: 3 },
+
+{   name: "Edgar",
+    health: 7200,
+    damage: 2160,
+    super: 0,
+    rank: "A",
+    winR: 27.8,
+    price: 25.99,
+    quantity: 12}
+
+]
+
+const S = BrawlStars.filter (BrawlStars => BrawlStars.rank === "S")
+console.log(S)
+const A = BrawlStars.filter (BrawlStars => BrawlStars.rank === "A")
+console.log(A)
+const B = BrawlStars.filter (BrawlStars => BrawlStars.rank === "B")
+console.log(B)
+const C = BrawlStars.filter (BrawlStars => BrawlStars.rank === "C")
+console.log(C)
+const D = BrawlStars.filter (BrawlStars => BrawlStars.rank === "D")
+console.log(D)
+
+
+function cartprice(BrawlerName, Quantity){
+    let total = 0;
+    BrawlStars.find(BrawlerName(BrawlStars.name.price)) = P
+    BrawlStars.find(BrawlerName(BrawlStars.name.quantity)) = Q
+
+    for (let x = 0;Quanity > Q, Quantity - Q;){
+        total = Q * P
+    }
+
+    if (Quantity <= 0)
+        return(total) 
+}
+console.log(cart(Edger, 2))
+
+
+function rgb() {
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+  box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  header.textContent = `Clicked ${x} rgb(${r}, ${g}, ${b})`;
+}
+
+function inject(){
+    const container = document.querySelector(".container")
+    container.insertAdjacentHTML
+    "beforeend",
+    `<div class="card">
+        <h2 class="card-header">${item.name}</h2>
+        <img src="${item.img}" alt="" />
+        <p>filler filler filler</p>
+      </div> `;
+
+}
+
+function displayProducts(BrawlerName){
+    
+}
