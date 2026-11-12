@@ -1,8 +1,3 @@
-
-
-
-
-
 const BrawlStars = [
 {   name: "Shelly",
     health: 7800,
@@ -11,7 +6,8 @@ const BrawlStars = [
     rank: "A",
     winR: 36.3,
     price: "free",
-    quantity: 2 
+    quantity: 2,
+    Image: `Shelly_Skin-Default.webp`
     },
 
 {   name: "Mandy",
@@ -20,7 +16,6 @@ const BrawlStars = [
     super: 5000,
     rank: "A",
     winR: 47.3,
-    price: 925,
     price: 25.99,
     quantity: 8},
 
@@ -70,7 +65,7 @@ const BrawlStars = [
     price: 17.87,
     quantity: 26 },
 
-{   name: "Darrly", 
+{   name: "Darryl", 
     health: 11000,
     damage: 4800,
     super: 800,
@@ -213,29 +208,26 @@ function cartprice(BrawlerName, Quantity){
     if (Quantity <= 0)
         return(total) 
 }
-console.log(cart(Edger, 2))
 
 
-function rgb() {
-  let r = Math.floor(Math.random() * 256);
-  let g = Math.floor(Math.random() * 256);
-  let b = Math.floor(Math.random() * 256);
-  box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-  header.textContent = `Clicked ${x} rgb(${r}, ${g}, ${b})`;
-}
 
-function inject(){
+
+
+function inject(BrawlStar){
     const container = document.querySelector(".container")
-    container.insertAdjacentHTML
-    "beforeend",
-    `<div class="card">
-        <h2 class="card-header">${item.name}</h2>
-        <img src="${item.img}" alt="" />
-        <p>filler filler filler</p>
-      </div> `;
-
+    container.insertAdjacentHTML("beforeend", `
+    <div class="card">
+        <h2 class="card-header">${BrawlStar.name}</h2>
+        <img class ="img" src="/${BrawlStar.Image}" alt=""></img>
+        <p class = "word-paragraph">Rank: ${BrawlStar.rank}</p>
+        <button class = "cost">${BrawlStar.price}</button>
+      </div>`
+    )
 }
 
-function displayProducts(BrawlerName){
-    
-}
+
+
+
+BrawlStars.forEach((BrawlStar => 
+    inject(BrawlStar)
+));
