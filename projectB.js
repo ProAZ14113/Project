@@ -17,7 +17,8 @@ const BrawlStars = [
     rank: "A",
     winR: 47.3,
     price: 25.99,
-    quantity: 8},
+    quantity: 8,
+    Image: `mandy.jpg`},
 
 {   name: "Nita",
     health: 8400,
@@ -26,7 +27,8 @@ const BrawlStars = [
     rank: "D", 
     winR: 47,
     price: 12.99,
-    quantity: 3
+    quantity: 3,
+    Image: `Nita.webp`
     },
 
 {   name: "Byron", 
@@ -36,7 +38,8 @@ const BrawlStars = [
     rank: "A",
     winR: 52,
     price: 25.99,
-    quantity: 1},
+    quantity: 1,
+    Image: `Byron.webp`},
 
 {   name: "Frank",
     health: 13600,
@@ -45,7 +48,8 @@ const BrawlStars = [
     rank: "D",
     winR: 35.6,
     price: 12.99,
-    quantity: 0 },
+    quantity: 0, 
+    Image: `Frank.webp`},
 
 {   name: "Janet",
     health: 6800,
@@ -54,7 +58,8 @@ const BrawlStars = [
     rank: "B", 
     winR: 58.2,
     price: 20.99,
-    quantity: 4 },
+    quantity: 4,
+    Image: `Janet.webp`},
 
 {   name: "Ollie", 
     health: 10800,
@@ -63,7 +68,8 @@ const BrawlStars = [
     rank: "C",
     winR: 55.9,
     price: 17.87,
-    quantity: 26 },
+    quantity: 26,
+    Image: `Ollie.webp`},
 
 {   name: "Darryl", 
     health: 11000,
@@ -72,7 +78,8 @@ const BrawlStars = [
     rank: "A",
     winR: 38.5,
     price: 25.99,
-    quantity: 2 },
+    quantity: 2,
+    Image: `Darrly.jpg`},
 
 {   name: "Angelo",
     health: 6200,
@@ -81,7 +88,8 @@ const BrawlStars = [
     rank: "B",
     winR: 60.8,
     price: 20.99,
-    quantity: 2 },
+    quantity: 2,
+    Image: `Angelo.webp` },
 
 {   name: "Gus",
     health: 6600,
@@ -90,7 +98,8 @@ const BrawlStars = [
     rank: "S",
     winR: 66.3,
     price: 35.99,
-    quantity: 1},
+    quantity: 1,
+    Image: `Gus.webp`},
 
 {   name: "Berry", 
     health: 5200,
@@ -99,8 +108,9 @@ const BrawlStars = [
     rank: "B",
     winR: 45.9,
     price: 20.99,
-    quantity: 2 },
-
+    quantity: 2,
+    Image: `Berry.webp`
+},
 {   name: "Surge",
     health: 6600,
     damage: 2360,
@@ -108,7 +118,8 @@ const BrawlStars = [
     rank: "A",
     winR: 39,
     price: 25.99,
-    quantity: 7},
+    quantity: 7,
+    Image: `Surge.webp`},
 
 {   name: "Barley",  
     health: 5400,
@@ -117,7 +128,8 @@ const BrawlStars = [
     rank: "C",
     winR: 49.6,
     price: 16.99,
-    quantity: 14},
+    quantity: 14,
+    Image: `Barley.webp`},
 
 {   name: "Bibi",
     health: 10000,
@@ -126,7 +138,8 @@ const BrawlStars = [
     rank: "B",
     winR: 35.7,
     price: 20.99,
-    quantity: 9},
+    quantity: 9,
+    Image: `Bibi.webp`},
 
 {   name: "Gigi", 
     health: 8200,
@@ -135,7 +148,8 @@ const BrawlStars = [
     rank: "B",
     winR: 55.2,
     price: 20.99,
-    quantity: 8},
+    quantity: 8,
+    Image: `Gigi.webp`},
 
 {   name: "Eve",
     health: 6200,
@@ -144,7 +158,8 @@ const BrawlStars = [
     rank: "B",
     winR: 58.9,
     price: 20.99,
-    quantity: 5 },
+    quantity: 5,
+    Image: `Eve.webp` },
 
 {   name: "Buzz",
     health: 10000,
@@ -153,7 +168,8 @@ const BrawlStars = [
     rank: "B",
     winR: 40.1,
     price: 20.99,
-    quantity: 1},
+    quantity: 1,
+    Image: `Buzz.webp`},
 
 {   name: "Jacky",
     health: 10400,
@@ -162,16 +178,18 @@ const BrawlStars = [
     rank: "C",
     winR: 48.6,
     price: 16.99,
-    quantity: 2},
+    quantity: 2,
+    Image: `Jacky.webp`},
 
 {   name: "Leon", 
     health: 7200,
     damage: 3840,
     super: 0,
-    rank: "B",
+    rank: "A",
     winR: 38.5,
     price: 26.99,
-    quantity: 3 },
+    quantity: 3,
+    Image: `Leon.webp`},
 
 {   name: "Edgar",
     health: 7200,
@@ -180,7 +198,8 @@ const BrawlStars = [
     rank: "A",
     winR: 27.8,
     price: 25.99,
-    quantity: 12}
+    quantity: 12,
+    Image: `Edgar_Skin-Default.webp`}
 
 ]
 
