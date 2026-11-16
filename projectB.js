@@ -79,7 +79,7 @@ const BrawlStars = [
     winR: 38.5,
     price: 25.99,
     quantity: 2,
-    Image: `Darrly.jpg`},
+    Image: `Darryl.webp`},
 
 {   name: "Angelo",
     health: 6200,
