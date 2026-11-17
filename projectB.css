@@ -81,7 +81,7 @@
   display: flex;
   flex-direction: row;
   background-color: rgb(233, 117, 9);
-  height: 130vh;
+  height: 120vh;
   flex-wrap: wrap;
 }
 
@@ -92,4 +92,38 @@
   flex-direction: column;
   align-items: center;
   object-fit: contain;
+}
+
+.cart{
+  height: 20rem;
+  width: 10rem
+}
+
+.Filter{
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 3rem;
+  border-radius: 75%;
+  text-align: center;
+  width: 15%;
+  margin: 2.5px;
+  align-items: center;
+}
+
+.containerFilter{
+  height: 2.5px;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: orange;
+  border-radius: 75%;
+}
+
+.Filterroe{
+  height: 5rem;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: rgb(233, 117, 9);
+  align-items: center;
 }

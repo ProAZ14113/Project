@@ -226,12 +226,17 @@ function cartprice(BrawlerName, Quantity){
 
     if (Quantity <= 0)
         return(total) 
-}
+};
 
 
 
 
 
+
+let Cart = [];
+const container = document.querySelector(".container")
+const cartainer = document.querySelector(".cartainer")
+const total = document.querySelector(".total")
 function inject(BrawlStar){
     const container = document.querySelector(".container")
     container.insertAdjacentHTML("beforeend", `
@@ -241,12 +246,16 @@ function inject(BrawlStar){
         <p class = "word-paragraph">Rank: ${BrawlStar.rank}</p>
         <button class = "cost">${BrawlStar.price}</button>
       </div>`
-    )
+    );
 }
-
-
-
 
 BrawlStars.forEach((BrawlStar => 
     inject(BrawlStar)
 ));
+/* 
+const button = querySelector(".cost")
+button.forEach(functions(button, index))
+button.addEventListener("click", function addItemCart(){
+    addItem(BrawlStars[index])})
+*/
+
