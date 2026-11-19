@@ -203,19 +203,27 @@ const BrawlStars = [
 
 ]
 
-const S = BrawlStars.filter (BrawlStars => BrawlStars.rank === "S")
-console.log(S)
-const A = BrawlStars.filter (BrawlStars => BrawlStars.rank === "A")
-console.log(A)
-const B = BrawlStars.filter (BrawlStars => BrawlStars.rank === "B")
-console.log(B)
-const C = BrawlStars.filter (BrawlStars => BrawlStars.rank === "C")
-console.log(C)
-const D = BrawlStars.filter (BrawlStars => BrawlStars.rank === "D")
-console.log(D)
+function filterBrawlers(rank){
+    if (rank === "Everything"){
+        displayBrawlStars(BrawlStars);
+}   else {
+    const filterBrawlers = BrawlStars.filter(function(Brawler){
+        return BrawlStars.rank === rank;
+    })
+displayBrawlStars(filtered);
+}};
+
+const filter = document.querySelectorAll(".filter");
+
+filter.forEach(function(filterbutton){
+    filterbutton.addEventListener("click", function(){
+    filterBrawlers(BrawlStars.rank)
+})
+})
 
 
-function cartprice(BrawlerName, Quantity){
+
+/* function cartprice(BrawlerName, Quantity){
     let total = 0;
     BrawlStars.find(BrawlerName(BrawlStars.name.price)) = P
     BrawlStars.find(BrawlerName(BrawlStars.name.quantity)) = Q
@@ -227,7 +235,7 @@ function cartprice(BrawlerName, Quantity){
     if (Quantity <= 0)
         return(total) 
 };
-
+ */
 
 
 

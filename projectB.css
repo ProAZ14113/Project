@@ -103,7 +103,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   height: 3rem;
-  border-radius: 75%;
+  border-radius: 12%;
   text-align: center;
   width: 15%;
   margin: 2.5px;
@@ -116,7 +116,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   background-color: orange;
-  border-radius: 75%;
 }
 
 .Filterroe{
