@@ -203,21 +203,37 @@ const BrawlStars = [
 
 ]
 
+function displayBrawlStars(list) {
+     const container = document.querySelector(".container"); 
+          container.innerHTML = "";
+     list.forEach(inject);
+     const filterbtns = document.querySelectorAll(".Filter")
+     filterbtns.forEach(function(button, index){
+        button.addEventListener("click", function(){
+            addBrawlerr(list[index])
+        })
+
+     })
+}
+displayBrawlStars(BrawlStars)
+
 function filterBrawlers(rank){
     if (rank === "Everything"){
         displayBrawlStars(BrawlStars);
 }   else {
-    const filterBrawlers = BrawlStars.filter(function(Brawler){
-        return BrawlStars.rank === rank;
+    const filtered  = BrawlStars.filter(function(Brawler){
+        return Brawler.rank === rank;
     })
-displayBrawlStars(filtered);
+        displayBrawlStars(filtered);
 }};
 
-const filter = document.querySelectorAll(".filter");
 
-filter.forEach(function(filterbutton){
+const filterbuttons = document.querySelectorAll(".filter");
+
+filterbuttons.forEach(function(filterbutton){
     filterbutton.addEventListener("click", function(){
-    filterBrawlers(BrawlStars.rank)
+        const selectedRank = filterbutton.getAttribute("rank")
+    filterBrawlers(selectedRank)
 })
 })
 
@@ -266,4 +282,7 @@ button.forEach(functions(button, index))
 button.addEventListener("click", function addItemCart(){
     addItem(BrawlStars[index])})
 */
-
+/* 
+function cart(){
+    const costbutton = 
+} */

@@ -33,7 +33,7 @@
 
 
 .card{
-  width: 19.788888888%;
+  width: 19%;
   height: 20rem;
   background-color: rgb(136, 38, 38);
   flex-direction: row;
@@ -83,6 +83,8 @@
   background-color: rgb(233, 117, 9);
   height: 120vh;
   flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
 }
 
 
