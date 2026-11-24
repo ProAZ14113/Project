@@ -1,3 +1,5 @@
+let cart = []
+
 const BrawlStars = [
 {   name: "Shelly",
     health: 7800,
@@ -210,7 +212,7 @@ function displayBrawlStars(list) {
      const filterbtns = document.querySelectorAll(".Filter")
      filterbtns.forEach(function(button, index){
         button.addEventListener("click", function(){
-            addBrawlerr(list[index])
+            addBrawler(list[index])
         })
 
      })
@@ -237,22 +239,10 @@ filterbuttons.forEach(function(filterbutton){
 })
 })
 
-
-
-/* function cartprice(BrawlerName, Quantity){
-    let total = 0;
-    BrawlStars.find(BrawlerName(BrawlStars.name.price)) = P
-    BrawlStars.find(BrawlerName(BrawlStars.name.quantity)) = Q
-
-    for (let x = 0;Quanity > Q, Quantity - Q;){
-        total = Q * P
-    }
-
-    if (Quantity <= 0)
-        return(total) 
-};
- */
-
+const resetbutton = document.querySelector(".filterreset")
+resetbutton.addEventListener("click", function(){
+    displayBrawlStars(BrawlStars);
+})
 
 
 
@@ -273,16 +263,35 @@ function inject(BrawlStar){
     );
 }
 
-BrawlStars.forEach((BrawlStar => 
-    inject(BrawlStar)
-));
-/* 
-const button = querySelector(".cost")
-button.forEach(functions(button, index))
-button.addEventListener("click", function addItemCart(){
-    addItem(BrawlStars[index])})
-*/
-/* 
-function cart(){
-    const costbutton = 
-} */
+
+function addtoCart(BrawlStars){
+    cart.push(BrawlStars);
+    displayCart();
+}
+
+function removefromCart(index){
+    shoppingCart.splice(index,1);
+    displayCart();
+}
+
+function displayCart(){
+    cartContainer.innerHTML = "";
+    let cartTotal = 0;
+    shoppingCart.forEach(function(BrawlStars, index)){
+        cartTotal = cartTotal + BrawlStars.cost;
+        cartContainer.insertAdjacentHTML(
+            "beforeend",
+            `<div class = "cart-item"> 
+            <p> ${BrawlStars.name} - $${BrawlStars.price}</p>
+            <button class = "remove-btn">Remove</button>
+            </div>`
+
+        )
+    }
+}
+
+const removeButtons = document.querySelector("filter-btn"){
+    filterButtons.forEach(function(button)){
+        button.addEventListener
+    }
+}
